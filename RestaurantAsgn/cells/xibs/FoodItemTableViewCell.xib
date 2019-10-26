@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="KGk-i7-Jjw" customClass="FoodItemTableViewCell" customModule="RestaurantAsgn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tn2-qy-mbP">
+                        <rect key="frame" x="24" y="12" width="319" height="144"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="g" translatesAutoresizingMaskIntoConstraints="NO" id="Xp8-eQ-Kpi">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="144"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="EQd-s9-x9q"/>
+                                    <constraint firstAttribute="width" constant="150" id="ybn-HN-Msv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ads-RZ-KEx">
+                                <rect key="frame" x="166" y="16" width="137" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLS-co-ICV">
+                                <rect key="frame" x="166" y="111" width="137" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhH-U3-Lab">
+                                <rect key="frame" x="166" y="83.5" width="137" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4P-Z8-wEY" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="166" y="51.5" width="137" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Xsp-z4-kU4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XLS-co-ICV" firstAttribute="trailing" secondItem="ads-RZ-KEx" secondAttribute="trailing" id="1eC-JG-h92"/>
+                            <constraint firstItem="ads-RZ-KEx" firstAttribute="top" secondItem="tn2-qy-mbP" secondAttribute="top" constant="16" id="3ei-x9-ZBB"/>
+                            <constraint firstItem="XLS-co-ICV" firstAttribute="leading" secondItem="ads-RZ-KEx" secondAttribute="leading" id="9xV-Z8-sWc"/>
+                            <constraint firstItem="IhH-U3-Lab" firstAttribute="trailing" secondItem="ads-RZ-KEx" secondAttribute="trailing" id="Pcn-ji-LjA"/>
+                            <constraint firstItem="IhH-U3-Lab" firstAttribute="leading" secondItem="ads-RZ-KEx" secondAttribute="leading" id="QIg-Jd-4yl"/>
+                            <constraint firstAttribute="bottom" secondItem="Xp8-eQ-Kpi" secondAttribute="bottom" id="SRT-Ns-cDf"/>
+                            <constraint firstItem="IhH-U3-Lab" firstAttribute="top" secondItem="k4P-Z8-wEY" secondAttribute="bottom" constant="12" id="TDB-oN-TFh"/>
+                            <constraint firstItem="k4P-Z8-wEY" firstAttribute="top" secondItem="ads-RZ-KEx" secondAttribute="bottom" constant="8" id="Uq5-Ib-6No"/>
+                            <constraint firstItem="XLS-co-ICV" firstAttribute="top" secondItem="IhH-U3-Lab" secondAttribute="bottom" constant="8" id="alc-5j-anb"/>
+                            <constraint firstItem="ads-RZ-KEx" firstAttribute="leading" secondItem="k4P-Z8-wEY" secondAttribute="leading" id="iGU-vb-5yA"/>
+                            <constraint firstItem="ads-RZ-KEx" firstAttribute="leading" secondItem="Xp8-eQ-Kpi" secondAttribute="trailing" constant="16" id="rsd-no-cLt"/>
+                            <constraint firstItem="Xp8-eQ-Kpi" firstAttribute="top" secondItem="tn2-qy-mbP" secondAttribute="top" id="wE9-SG-bUe"/>
+                            <constraint firstItem="Xp8-eQ-Kpi" firstAttribute="leading" secondItem="tn2-qy-mbP" secondAttribute="leading" id="wrM-nU-yGX"/>
+                            <constraint firstAttribute="trailing" secondItem="ads-RZ-KEx" secondAttribute="trailing" constant="16" id="xRg-NG-jXS"/>
+                            <constraint firstItem="ads-RZ-KEx" firstAttribute="trailing" secondItem="k4P-Z8-wEY" secondAttribute="trailing" id="ybW-e7-gES"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="color-pale-white-background"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tn2-qy-mbP" secondAttribute="bottom" constant="8" id="1gO-Xa-E3Y"/>
+                    <constraint firstItem="tn2-qy-mbP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="4SO-dg-Uul"/>
+                    <constraint firstAttribute="trailing" secondItem="tn2-qy-mbP" secondAttribute="trailing" constant="24" id="4ie-1I-7hL"/>
+                    <constraint firstItem="tn2-qy-mbP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="j9t-VG-sKT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgFoodItem" destination="Xp8-eQ-Kpi" id="xsN-tu-QS2"/>
+                <outlet property="lblAmount" destination="XLS-co-ICV" id="0uK-y9-OQY"/>
+                <outlet property="lblFoodName" destination="ads-RZ-KEx" id="fgm-6L-1ye"/>
+                <outlet property="lblWaitingTime" destination="IhH-U3-Lab" id="s4O-xm-4XM"/>
+                <outlet property="viewContainer" destination="tn2-qy-mbP" id="bOw-uH-iIn"/>
+                <outlet property="viewRating" destination="k4P-Z8-wEY" id="IgU-US-6Yi"/>
+            </connections>
+            <point key="canvasLocation" x="103.62318840579711" y="160.04464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="g" width="678" height="729"/>
+        <namedColor name="color-pale-white-background">
+            <color red="0.95686274509803926" green="0.92941176470588238" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
